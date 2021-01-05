@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link class="old" rel="stylesheet" href="style.css">
+    <link class="fifa" rel="stylesheet" href="style.css" title="">
+    <title>Калькулятор</title>
+</head>
+
+<body class="body">
+    <div class="load">
+
+    </div>
+
+    <div class="alert-adb" style="display: none;">
+        <button class="alert-adb__btn">Закрыть</button>
+        <span>Внимание! <br> отключите адблок</span>
+    </div>
+
+
+
+
+    <section class="calculator" style="display: block;">
+        <div class="telo">
+            <div class="reklama">рекламный контент</div>
+        </div>
+
+        <span class="author">by introversion</span>
+
+        <div class="content">
+            <span class="box__url"></span>
+        </div>
+
+        <div class="tumbler">
+            <div>
+                вкл. ночную тему:
+                <input class="dark" type="checkbox">
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="main">
+                <input class="window" readonly>
+                <div class="line">
+                    <div class="within darktheme" onclick="insert('7')">7</div>
+                    <div class="within darktheme" onclick="insert('8')">8</div>
+                    <div class="within darktheme" onclick="insert('9')">9</div>
+                    <div class="within darktheme" onclick="insert('/')">/</div>
+                    <div class="within darktheme del" onclick="insert('del')">del</div>
+                </div>
+                <div class="line">
+                    <div class="within darktheme" onclick="insert('4')">4</div>
+                    <div class="within darktheme" onclick="insert('5')">5</div>
+                    <div class="within darktheme" onclick="insert('6')">6</div>
+                    <div class="within darktheme" onclick="insert('*')">*</div>
+                    <div class="within darktheme clear" onclick="insert('C')">C</div>
+                </div>
+                <div class="line">
+                    <div class="within darktheme" onclick="insert('1')">1</div>
+                    <div class="within darktheme" onclick="insert('2')">2</div>
+                    <div class="within darktheme" onclick="insert('3')">3</div>
+                    <div class="within darktheme" onclick="insert('-')">-</div>
+                    <div class="within darktheme" onclick="insert('(')">(</div>
+                </div>
+                <div class="line">
+                    <div class="within darktheme" onclick="insert('0')">0</div>
+                    <div class="within darktheme" onclick="insert('.')">.</div>
+                    <div class="within darktheme" onclick="equal()">=</div>
+                    <div class="within darktheme" onclick="insert('+')">+</div>
+                    <div class="within darktheme" onclick="insert(')')">)</div>
+                </div>
+            </div>
+            <div class="memory__inner">
+                <div class="memory__window" readonly>
+                    <div class="memory__btn"></div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

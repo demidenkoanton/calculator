@@ -1,0 +1,174 @@
+body {
+  background-color: lightgray;
+  user-select: none;
+  position: relative;
+}
+
+.telo {
+  background-color: black;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-adb {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 350px;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.alert-adb:hover {
+  background-color: #fff;
+}
+
+.alert-adb span {
+  font-size: 50px;
+}
+
+.alert-adb__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.alert-adb__btn:hover {
+  background-color: #9696c3;
+}
+
+.splash {
+  text-align: center;
+}
+
+.author {
+  animation: author 2s linear infinite;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes author {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  50% {
+    color: rgb(155, 152, 152);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.line {
+  display: flex;
+}
+
+.within {
+  background-color: #fc0;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.within:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #f70;
+}
+
+.within:active {
+  background-color: black;
+}
+
+input {
+  width: calc(100% - 4px);
+  height: 50px;
+  border: none;
+  outline: none;
+}
+
+.box__url {
+  background-color: rgb(157, 147, 167);
+  color: #000000;
+  display: inline-block;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dark,
+.light {
+  height: 14px;
+  width: auto;
+}
+
+label {
+  display: inline-flex;
+  padding-top: 15px;
+}
+
+.reklama {
+  color: red;
+}
+
+.tumbler {
+  display: inline-block;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+.tumbler div {
+  line-height: 20px;
+}
+
+.tumbler .dark {
+  float: right;
+}
+
+.memory__window {
+  margin: 0px;
+  width: 263px;
+  height: 452px;
+  resize: none;
+  border: none;
+  background-color: rgb(157 166 177);
+  outline: none;
+  /* display: flex;
+    justify-content: flex-end; */
+  position: relative;
+}
+
+.memory__btn:before {
+  position: absolute;
+  content: "";
+  background-image: url(clear.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  bottom: 0;
+  right: 0;
+}

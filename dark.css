@@ -1,0 +1,31 @@
+/* режим ночь */
+body {
+    background-color: rgb(78 54 54);
+}
+
+.darktheme {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.window {
+    background-color: rgb(95, 95, 95);
+    outline: none;
+    color: #ffffff;
+}
+
+.within:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(87, 79, 71);
+}
+
+.within:active {
+    background-color: rgb(161, 106, 106);
+}
+
+.memory__window {
+    background-color: rgb(153, 183, 218);
+}
+
+/* режим ночь */
